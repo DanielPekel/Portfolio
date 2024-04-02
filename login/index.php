@@ -1,20 +1,16 @@
 <?php require_once '../header.php';
-if (isset($_SESSION['username'])) {?>
-    <script>
-        window.location.href = "https://danielpekel.nl/dashboard";
-    </script>
-    <?php }
+if (isset($_SESSION['username'])) {
+    header('Location: https://localhost/Portfolio/dashboard');
+}
 $msg = '';
 if (isset($_POST['submit'])) {
     $username = escape($_POST['username']);
     $password = escape($_POST['password']);
     if ($username != "" && $password != "") {
         if ($username == 'daniel' && $password == 'test') {
-            $_SESSION['username'] = 'test'?>
-            <script>
-                window.location.href = "https://danielpekel.nl/dashboard";
-            </script>
-        <?php } else {
+            $_SESSION['username'] = 'test';
+            header('Location: https://localhost/Portfolio/dashboard');
+} else {
             $msg = 'Gebruikersnaam of wachtwoord is onjuist';
             return false;
         }

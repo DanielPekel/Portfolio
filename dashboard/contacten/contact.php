@@ -9,7 +9,7 @@ if (isset($_GET['id'])) {
     $userres = dbFetch($userQuery);
     if (!isset($_COOKIE['username'])) { ?>
         <script>
-            window.location.href = "https://danielpekel.nl/login";
+            window.location.href = "/login";
         </script>
     <?php }
     ?>

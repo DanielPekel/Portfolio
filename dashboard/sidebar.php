@@ -2,7 +2,7 @@
 // TODO - make for mobile
 if(!isset($_SESSION['username'])){ ?>
     <script>
-    window.location.href = "https://danielpekel.nl/login";
+    window.location.href = "/login";
     </script>
  <?php }
 ?>
@@ -22,16 +22,16 @@ if(!isset($_SESSION['username'])){ ?>
                 </div>
                 <div class="container">
                     <div class="menuitem">
-                        <a href="/dashboard">Dashboard</a>
+                        <a href="https://localhost/Portfolio/dashboard">Dashboard</a>
                     </div>
                     <div class="menuitem">
-                        <a href="/dashboard/taken">Taken</a>
+                        <a href="https://localhost/Portfolio/dashboard/taken">Taken</a>
                     </div>
                     <div class="menuitem">
-                        <a href="/dashboard/contacten">Contacten</a>
+                        <a href="https://localhost/Portfolio/dashboard/contacten">Contacten</a>
                     </div>
                     <div class="menuitem">
-                        <a href="/dashboard/ideeen">Ideeën</a>
+                        <a href="https://localhost/Portfolio/dashboard/ideeen">Ideeën</a>
                     </div>
                 </div>
             </div>

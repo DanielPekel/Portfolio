@@ -1,9 +1,9 @@
 <?php 
 // Database connection
-$host = 'danies-website.db.transip.me';
-$database = 'danies_website';
-$db_user = 'danies_daniel';
-$db_passw = 'SchoklandStraat66%';
+$host = 'localhost';
+$database = 'portfolioDaniel';
+$db_user = 'root';
+$db_passw = '';
 
 $con = mysqli_connect($host, $db_user, $db_passw, $database);
 mysqli_select_db($con, $database);

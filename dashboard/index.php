@@ -7,13 +7,13 @@ $tasks = dbQuery('SELECT * FROM taken LIMIT 12');
         <div class="px-5 row justify-content-between mt-5">
             <div class="mt-5 col-3 bg-cyan text-white rounded-4 fw-bold fs-4"><i
                         class="fa-regular fa-clipboard"></i>
-                <a class="text-white text-decoration-none" href="/dashboard/taken"> Taken</a>
+                <a class="text-white text-decoration-none" href="https://localhost/Portfolio/dashboard/taken"> Taken</a>
             </div>
             <div class="mt-5 col-3 bg-red text-white rounded-4 fw-bold fs-4"><i class="fa-solid fa-users"></i>
-                <a class="text-white text-decoration-none" href="/dashboard/contacten">Klanten</a>
+                <a class="text-white text-decoration-none" href="https://localhost/Portfolio//dashboard/contacten">Klanten</a>
             </div>
             <div class="mt-5 col-3 bg-blue text-white rounded-4 fw-bold fs-4"><i class="fa-solid fa-brain"></i>
-                <a class="text-white text-decoration-none" href="/dashboard/ideeen">Ideeën</a>
+                <a class="text-white text-decoration-none" href="https://localhost/Portfolio//dashboard/ideeen">Ideeën</a>
             </div>
         </div>
     </div>
@@ -30,17 +30,17 @@ $tasks = dbQuery('SELECT * FROM taken LIMIT 12');
             foreach ($tasks as $task) : ?>
                 <tr class="w-100 <?php if ($i % 2 == 0) { ?> even <?php } ?>">
                     <td class="w-10 text-center">
-                        <a href="https://danielpekel.nl/dashboard/taken/task.php?id=<?php echo $task['id']; ?>">
+                        <a href="https://localhost/Portfolio/dashboard/taken/task.php?id=<?php echo $task['id']; ?>">
                             <?php echo $task['id']; ?>
                         </a>
                     </td>
                     <td>
-                        <a href="https://danielpekel.nl/dashboard/taken/task.php?id=<?php echo $task['id']; ?>">
+                        <a href="https://localhost/Portfolio/dashboard/taken/task.php?id=<?php echo $task['id']; ?>">
                             <?php echo $task['information']; ?>
                         </a>
                     </td>
                     <td>
-                        <a href="https://danielpekel.nl/dashboard/taken/task.php?id=<?php echo $task['id']; ?>">
+                        <a href="https://localhost/Portfolio/dashboard/taken/task.php?id=<?php echo $task['id']; ?>">
                             <?php $custquery = dbQuery('SELECT name FROM customers WHERE id=' . $task['customerOrCompany']);
                             foreach ($custquery as $cust):
                                 echo $cust['name'];
@@ -48,7 +48,7 @@ $tasks = dbQuery('SELECT * FROM taken LIMIT 12');
                         </a>
                     </td>
                     <td>
-                        <a href="https://danielpekel.nl/dashboard/taken/task.php?id=<?php echo $task['id']; ?>">
+                        <a href="https://localhost/Portfolio/dashboard/taken/task.php?id=<?php echo $task['id']; ?>">
                             <p><?php if ($task['status'] == 0) {
                                     echo 'Afgerond';
                                 } elseif ($task['status'] == 1) {
