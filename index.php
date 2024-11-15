@@ -2,20 +2,39 @@
 
     <div class="views">
         <div class="container pt-md-1 pt-xl-4 pb-3">
-            <div class="row justify-content-center pt-md-5 pb-3">
+            <div class="row justify-content-center justify-content-md-evenly pt-md-5 pb-3">
+                <div class="col-3 d-none d-md-block text-center" style="padding-top:10%;">
+                    <h1 class="fs-1 fw-bold text-white-50">Hi, I'm <span
+                                class="head-primary">Daniël</span>
+                    </h1>
+                    <p class="fs-5 mt-3 fw-bolder text-white-50">I'm a <span
+                                class="head-primary">software developer</span>
+                        from the
+                        Netherlands&nbsp</p>
+                    <!-- TODO: mobile version text -->
+                    <div class="container mt-md-5 mt-2">
+                        <div class="row justify-content-center">
+                            <div class="col-3 col-md-4 text-center">
+                                <a class="fs-1" href="https://www.linkedin.com/in/dani%C3%ABl-pekel-software-dev/"><i
+                                            class="fa-brands fa-linkedin"></i></a>
+                            </div>
+                            <div class="col-3 col-md-4 text-center">
+                                <a class="fs-1 text-success" href="https://wa.me/684054534"><i
+                                            class="fa-brands fa-whatsapp"></i></a>
+                            </div>
+                            <div class="col-3 col-md-4 text-center">
+                                <a class="fs-1 text-white" href="mailto:contact@danielpekel.nl"><i
+                                            class="fa-solid fa-envelope"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-8 text-start col-md-3 mt-5 pt-5 pt-md-0">
-                    <img src="./assets/media/selfie.jpg" class="roundFirstImage" alt="A picture of myself" width="100%"
+                    <img src="./assets/media/64265.JPG" class="rounded" alt="A picture of myself" width="100%"
                          height="auto">
                 </div>
             </div>
             <div class="pt-4 container text-center">
-                <div class="container">
-                    <div class="d-inline-flex">
-                        <h1 id="toptext" class="fs-1 fw-bold typethis1 text-white-50">Hi, I'm <span
-                                    class="head-primary">Daniël</span>
-                        </h1>
-                    </div>
-                </div>
                 <div class="container d-none d-md-block">
                     <div class="d-inline-flex">
                         <p id="bottomtext" class="w-0 fs-5 mt-3 fw-bolder typethis text-white-50">I'm a <span
@@ -38,7 +57,7 @@
                 </div>
             </div>
         </div>
-        <div class="container mt-md-5 mt-2">
+        <div class="container mt-md-5 mt-2 d-block d-md-none">
             <div class="row justify-content-center">
                 <div class="col-3 col-md-1 text-center">
                     <a class="fs-1" href="https://www.linkedin.com/in/dani%C3%ABl-pekel-software-dev/"><i
@@ -47,10 +66,6 @@
                 <div class="col-3 col-md-1 text-center">
                     <a class="fs-1 text-success" href="https://wa.me/684054534"><i
                                 class="fa-brands fa-whatsapp"></i></a>
-                </div>
-                <div class="col-3 col-md-1 text-center">
-                    <a class="fs-1" href="https://www.instagram.com/1oak_daniel/"><i id="insta"
-                                                                                     class="fa-brands fa-instagram"></i></a>
                 </div>
                 <div class="col-3 col-md-1 text-center">
                     <a class="fs-1 text-white" href="mailto:contact@danielpekel.nl"><i
@@ -125,15 +140,15 @@
                 <div class="col-12 col-md-6 pt-5">
                     <div class="container mt-4">
                         <h2 class="text-white fw-bold pb-3">My projects</h2>
-                        <p class="text-white-50">All of my projects are visible in github. I'm trying to expirement as
+                        <p class="text-white-50">All of my projects are visible in <span class="text-primary">github</span>. I'm trying to expirement as
                             much as possible with
                             all different sorts of programming languages so I'll keep learning new things and habits in
                             coding.<br/><br/>
                             One of my latest projects is this portfolio website. I'm now learning to make an one page
                             website with as much necessary information for you.<br/><br/>
-                            If you maybe have requests for a website or an app, I'm always open for a chat and I'll try
+                            If you have a requests for a website or an app, I'm always open for a chat and I'll try
                             to get you
-                            to reach your goal.
+                            to reach your <span class="text-primary">goal</span>.
                         </p>
                     </div>
                     <h2></h2>
@@ -147,14 +162,15 @@
                 <div class="col-12 col-md-8 text-start pt-5 mt-3">
                     <h3 class="text-white fw-bold fs-1">About me</h3>
                     <p class="text-white-50 pt-4">
-                        I'm a 19-year-old software developer from the Netherlands. I'm currently studying at Deltion
-                        College in Zwolle.
-                        I'm currently in my second year of the MBO ICT programme. I'm learning a lot of new things
-                        about programming, and
-                        I'm trying to learn as much as possible.<br/><br/>
-                        I'm currently working at a small company called <a class="text-white attribute"
-                                                                           href="https://service-ict.nl">Service-ICT</a>,
-                        this is the place where I gained all my experience so far.<br/><br/>
+                        I'm a <?php echo date("Y") - 2003; ?>-year-old software developer from the Netherlands. I'm
+                        currently studying at Alfa College located in Hoogeveen.
+                        I'm currently in my first year of the MBO ICT programme. I'm learning a lot about programming
+                        and IT over all.<br/><br/>
+                        I've worked at multiple companies so far, my experiences come from the following companies: <a
+                                class="text-white attribute"
+                                href="https://service-ict.nl">Service-ICT</a> and <a class="text-white attribute"
+                                                                                     href="koelict.nl">Koel ICT</a>.
+                        <br/><br/>
                     </p>
                     <div class="container text-center">
                         <p class="text-indigo fw-bold fs-4">"I'm hoping to become an experienced and
@@ -370,16 +386,17 @@
             <div class="row justify-content-center pt-md-5 mt-3">
 
                 <div class="col-12 col-md-5">
-                    <img src="./assets/media/fotoOfMe.jpg" width="100%" height="auto" alt="foto of me"
+                    <img src="./assets/media/IMG_3299.JPG" width="80%" height="auto" alt="foto of me"
                          class="rounded-5"/>
                 </div>
                 <div class="col-12 col-md-7 pt-4 pt-md-0">
-                    <p class="text-white-50">If I'm not coding you can find me at a skate park or a gym. I started to
+                    <p class="text-white-50">If I'm not coding you can find me at the gym or outside with my friends. I
+                        started to
                         notice that exercise was
                         missing from my life, it gives me an energy rush and motivates me for days.<br/><br/>
                         I'm also a big fan of formula 1, one of my goals is to be at a race day.<br/><br/>
                         I also play guitar a bit.<br/><br/>
-                        Besides all these hobbies is one of them also coding, I did it as a hobby, and it eventually
+                        Besides all these hobbies one of them is coding, I did it as a hobby, and it eventually
                         turned into my job.</p>
                     <p class="text-indigo fw-bold fs-4">"If your hobby becomes your job, you will never work a day in
                         your life"
@@ -411,10 +428,6 @@
                     <div class="col-3 col-md-1 text-center">
                         <a class="fs-1 text-success" href="https://wa.me/684054534"><i
                                     class="fa-brands fa-whatsapp"></i></a>
-                    </div>
-                    <div class="col-3 col-md-1 text-center">
-                        <a class="fs-1" href="https://www.instagram.com/1oak_daniel/"><i id="insta"
-                                                                                         class="fa-brands fa-instagram"></i></a>
                     </div>
                     <div class="col-3 col-md-1 text-center">
                         <a class="fs-1 text-white" href="mailto:contact@danielpekel.nl"><i

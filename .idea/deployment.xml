@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="PublishConfigData" serverName="bbslimWip">
+  <component name="PublishConfigData">
     <serverData>
       <paths name="3dFoodWIP">
         <serverdata>
@@ -114,7 +114,21 @@
           </mappings>
         </serverdata>
       </paths>
+      <paths name="demoCRM">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="devredenhofLive">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="duoklus">
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />
@@ -191,6 +205,13 @@
           </mappings>
         </serverdata>
       </paths>
+      <paths name="profi-crm">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="profi-new">
         <serverdata>
           <mappings>
@@ -227,6 +248,13 @@
         </serverdata>
       </paths>
       <paths name="service-ict">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="solidebasiccrm">
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />
